@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E258A18E9B4A38A72B0FB70 /* Pods_TrelloSyncTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C803FBA4FE269EA54B99C4B /* Pods_TrelloSyncTool.framework */; };
 		843DD294217B3DA200863AEE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DD293217B3DA200863AEE /* main.swift */; };
 		84C837FC217DF7EB00541D4D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C837FB217DF7EB00541D4D /* main.swift */; };
 		84F3D4E9215E52A600D28733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3D4E8215E52A600D28733 /* AppDelegate.swift */; };
@@ -76,10 +75,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1066F47F323AE93E58DAE37B /* Pods-TrelloSyncTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrelloSyncTool.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-TrelloSyncTool/Pods-TrelloSyncTool.release.xcconfig"; sourceTree = "<group>"; };
-		4462CB99B6D45DC9FE1C19F3 /* Pods-EvernoteSyncTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteSyncTool.debug.xcconfig"; path = "Target Support Files/Pods-EvernoteSyncTool/Pods-EvernoteSyncTool.debug.xcconfig"; sourceTree = "<group>"; };
+		4462CB99B6D45DC9FE1C19F3 /* Pods-EvernoteSyncTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteSyncTool.debug.xcconfig"; path = "../iSwiftUI/Pods/Target Support Files/Pods-EvernoteSyncTool/Pods-EvernoteSyncTool.debug.xcconfig"; sourceTree = "<group>"; };
 		53CCB0483A87F22B1E9FFCED /* Pods-TrelloSyncTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrelloSyncTool.release.xcconfig"; path = "Target Support Files/Pods-TrelloSyncTool/Pods-TrelloSyncTool.release.xcconfig"; sourceTree = "<group>"; };
-		7C803FBA4FE269EA54B99C4B /* Pods_TrelloSyncTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrelloSyncTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		843DD291217B3DA200863AEE /* EvernoteSyncTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EvernoteSyncTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		843DD293217B3DA200863AEE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		843DD298217B3F9E00863AEE /* EvernoteSyncTool-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EvernoteSyncTool-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -103,8 +100,7 @@
 		84F3D521215E556500D28733 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		84F3D523215E556500D28733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F3D524215E556500D28733 /* CleanClosureSyntax.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CleanClosureSyntax.entitlements; sourceTree = "<group>"; };
-		8F20D964E67D18F312C17000 /* Pods-TrelloSyncTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrelloSyncTool.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-TrelloSyncTool/Pods-TrelloSyncTool.debug.xcconfig"; sourceTree = "<group>"; };
-		A2658A62E5B4DC332542B588 /* Pods-EvernoteSyncTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteSyncTool.release.xcconfig"; path = "Target Support Files/Pods-EvernoteSyncTool/Pods-EvernoteSyncTool.release.xcconfig"; sourceTree = "<group>"; };
+		A2658A62E5B4DC332542B588 /* Pods-EvernoteSyncTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteSyncTool.release.xcconfig"; path = "../iSwiftUI/Pods/Target Support Files/Pods-EvernoteSyncTool/Pods-EvernoteSyncTool.release.xcconfig"; sourceTree = "<group>"; };
 		B7F74690828570A85E16D733 /* Pods-EvernoteSyncTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteSyncTool.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-EvernoteSyncTool/Pods-EvernoteSyncTool.debug.xcconfig"; sourceTree = "<group>"; };
 		CBBFD7BBFAEF59A15C0C7E45 /* Pods_EvernoteSyncTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvernoteSyncTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3BFDA6FBCCCB8A075A21D96 /* Pods-EvernoteSyncTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteSyncTool.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-EvernoteSyncTool/Pods-EvernoteSyncTool.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +120,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E258A18E9B4A38A72B0FB70 /* Pods_TrelloSyncTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,8 +158,6 @@
 				53CCB0483A87F22B1E9FFCED /* Pods-TrelloSyncTool.release.xcconfig */,
 				B7F74690828570A85E16D733 /* Pods-EvernoteSyncTool.debug.xcconfig */,
 				E3BFDA6FBCCCB8A075A21D96 /* Pods-EvernoteSyncTool.release.xcconfig */,
-				8F20D964E67D18F312C17000 /* Pods-TrelloSyncTool.debug.xcconfig */,
-				1066F47F323AE93E58DAE37B /* Pods-TrelloSyncTool.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../../Pods;
@@ -230,7 +223,6 @@
 			children = (
 				84F3D504215E532600D28733 /* Cocoa.framework */,
 				CBBFD7BBFAEF59A15C0C7E45 /* Pods_EvernoteSyncTool.framework */,
-				7C803FBA4FE269EA54B99C4B /* Pods_TrelloSyncTool.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -283,7 +275,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84C837FF217DF7EB00541D4D /* Build configuration list for PBXNativeTarget "TrelloSyncTool" */;
 			buildPhases = (
-				83564EE717AEA20376A53B59 /* [CP] Check Pods Manifest.lock */,
 				84C837F5217DF7EB00541D4D /* Sources */,
 				84C837F6217DF7EB00541D4D /* Frameworks */,
 				84C837F7217DF7EB00541D4D /* CopyFiles */,
@@ -451,28 +442,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		83564EE717AEA20376A53B59 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TrelloSyncTool-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		84EA91E72179CAAE000DD6C9 /* swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -605,7 +574,6 @@
 		};
 		84C837FD217DF7EB00541D4D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F20D964E67D18F312C17000 /* Pods-TrelloSyncTool.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -617,7 +585,6 @@
 		};
 		84C837FE217DF7EB00541D4D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1066F47F323AE93E58DAE37B /* Pods-TrelloSyncTool.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
