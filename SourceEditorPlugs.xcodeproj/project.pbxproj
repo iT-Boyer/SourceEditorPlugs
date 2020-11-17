@@ -1,0 +1,933 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E258A18E9B4A38A72B0FB70 /* Pods_TrelloSyncTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C803FBA4FE269EA54B99C4B /* Pods_TrelloSyncTool.framework */; };
+		843DD294217B3DA200863AEE /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843DD293217B3DA200863AEE /* main.swift */; };
+		84C837FC217DF7EB00541D4D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C837FB217DF7EB00541D4D /* main.swift */; };
+		84F3D4E9215E52A600D28733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3D4E8215E52A600D28733 /* AppDelegate.swift */; };
+		84F3D4EB215E52A700D28733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F3D4EA215E52A700D28733 /* Assets.xcassets */; };
+		84F3D4EE215E52A700D28733 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F3D4EC215E52A700D28733 /* MainMenu.xib */; };
+		84F3D505215E532600D28733 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F3D504215E532600D28733 /* Cocoa.framework */; };
+		84F3D508215E532600D28733 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3D507215E532600D28733 /* SourceEditorExtension.swift */; };
+		84F3D50A215E532600D28733 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3D509215E532600D28733 /* SourceEditorCommand.swift */; };
+		84F3D50F215E532600D28733 /* XTComment.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84F3D502215E532500D28733 /* XTComment.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84F3D515215E53E600D28733 /* SecondEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3D514215E53E600D28733 /* SecondEditorCommand.swift */; };
+		84F3D51D215E556500D28733 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F3D504215E532600D28733 /* Cocoa.framework */; };
+		84F3D520215E556500D28733 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3D51F215E556500D28733 /* SourceEditorExtension.swift */; };
+		84F3D522215E556500D28733 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3D521215E556500D28733 /* SourceEditorCommand.swift */; };
+		84F3D527215E556500D28733 /* CleanClosureSyntax.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84F3D51C215E556400D28733 /* CleanClosureSyntax.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B492DB013C5A4E2C6C121F12 /* Pods_EvernoteSyncTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBFD7BBFAEF59A15C0C7E45 /* Pods_EvernoteSyncTool.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84F3D50D215E532600D28733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F3D4DD215E52A600D28733 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F3D501215E532500D28733;
+			remoteInfo = XTComment;
+		};
+		84F3D525215E556500D28733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F3D4DD215E52A600D28733 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F3D51B215E556400D28733;
+			remoteInfo = CleanClosureSyntax;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		843DD28F217B3DA200863AEE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		84C837F7217DF7EB00541D4D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		84F3D513215E532600D28733 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				84F3D50F215E532600D28733 /* XTComment.appex in Embed App Extensions */,
+				84F3D527215E556500D28733 /* CleanClosureSyntax.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1066F47F323AE93E58DAE37B /* Pods-TrelloSyncTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrelloSyncTool.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-TrelloSyncTool/Pods-TrelloSyncTool.release.xcconfig"; sourceTree = "<group>"; };
+		4462CB99B6D45DC9FE1C19F3 /* Pods-EvernoteSyncTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteSyncTool.debug.xcconfig"; path = "Target Support Files/Pods-EvernoteSyncTool/Pods-EvernoteSyncTool.debug.xcconfig"; sourceTree = "<group>"; };
+		53CCB0483A87F22B1E9FFCED /* Pods-TrelloSyncTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrelloSyncTool.release.xcconfig"; path = "Target Support Files/Pods-TrelloSyncTool/Pods-TrelloSyncTool.release.xcconfig"; sourceTree = "<group>"; };
+		7C803FBA4FE269EA54B99C4B /* Pods_TrelloSyncTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrelloSyncTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		843DD291217B3DA200863AEE /* EvernoteSyncTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EvernoteSyncTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		843DD293217B3DA200863AEE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		843DD298217B3F9E00863AEE /* EvernoteSyncTool-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EvernoteSyncTool-Bridging-Header.h"; sourceTree = "<group>"; };
+		84C837F9217DF7EB00541D4D /* TrelloSyncTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TrelloSyncTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C837FB217DF7EB00541D4D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		84F3D4E5215E52A600D28733 /* SourceEditorPlugs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SourceEditorPlugs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F3D4E8215E52A600D28733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84F3D4EA215E52A700D28733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84F3D4ED215E52A700D28733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		84F3D4EF215E52A700D28733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F3D4F0215E52A700D28733 /* SourceEditorPlugs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SourceEditorPlugs.entitlements; sourceTree = "<group>"; };
+		84F3D502215E532500D28733 /* XTComment.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XTComment.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F3D504215E532600D28733 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		84F3D507215E532600D28733 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		84F3D509215E532600D28733 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		84F3D50B215E532600D28733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F3D50C215E532600D28733 /* XTComment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XTComment.entitlements; sourceTree = "<group>"; };
+		84F3D514215E53E600D28733 /* SecondEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondEditorCommand.swift; sourceTree = "<group>"; };
+		84F3D51C215E556400D28733 /* CleanClosureSyntax.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CleanClosureSyntax.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F3D51F215E556500D28733 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		84F3D521215E556500D28733 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		84F3D523215E556500D28733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F3D524215E556500D28733 /* CleanClosureSyntax.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CleanClosureSyntax.entitlements; sourceTree = "<group>"; };
+		8F20D964E67D18F312C17000 /* Pods-TrelloSyncTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrelloSyncTool.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-TrelloSyncTool/Pods-TrelloSyncTool.debug.xcconfig"; sourceTree = "<group>"; };
+		A2658A62E5B4DC332542B588 /* Pods-EvernoteSyncTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteSyncTool.release.xcconfig"; path = "Target Support Files/Pods-EvernoteSyncTool/Pods-EvernoteSyncTool.release.xcconfig"; sourceTree = "<group>"; };
+		B7F74690828570A85E16D733 /* Pods-EvernoteSyncTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteSyncTool.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-EvernoteSyncTool/Pods-EvernoteSyncTool.debug.xcconfig"; sourceTree = "<group>"; };
+		CBBFD7BBFAEF59A15C0C7E45 /* Pods_EvernoteSyncTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvernoteSyncTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3BFDA6FBCCCB8A075A21D96 /* Pods-EvernoteSyncTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteSyncTool.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-EvernoteSyncTool/Pods-EvernoteSyncTool.release.xcconfig"; sourceTree = "<group>"; };
+		F7B3FC758C639CBA34C90142 /* Pods-TrelloSyncTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrelloSyncTool.debug.xcconfig"; path = "Target Support Files/Pods-TrelloSyncTool/Pods-TrelloSyncTool.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		843DD28E217B3DA200863AEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B492DB013C5A4E2C6C121F12 /* Pods_EvernoteSyncTool.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C837F6217DF7EB00541D4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E258A18E9B4A38A72B0FB70 /* Pods_TrelloSyncTool.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F3D4E2215E52A600D28733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F3D4FF215E532500D28733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F3D505215E532600D28733 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F3D519215E556400D28733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F3D51D215E556500D28733 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C520DA7B0AF3033AB8C4E2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4462CB99B6D45DC9FE1C19F3 /* Pods-EvernoteSyncTool.debug.xcconfig */,
+				A2658A62E5B4DC332542B588 /* Pods-EvernoteSyncTool.release.xcconfig */,
+				F7B3FC758C639CBA34C90142 /* Pods-TrelloSyncTool.debug.xcconfig */,
+				53CCB0483A87F22B1E9FFCED /* Pods-TrelloSyncTool.release.xcconfig */,
+				B7F74690828570A85E16D733 /* Pods-EvernoteSyncTool.debug.xcconfig */,
+				E3BFDA6FBCCCB8A075A21D96 /* Pods-EvernoteSyncTool.release.xcconfig */,
+				8F20D964E67D18F312C17000 /* Pods-TrelloSyncTool.debug.xcconfig */,
+				1066F47F323AE93E58DAE37B /* Pods-TrelloSyncTool.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
+		843DD292217B3DA200863AEE /* EvernoteSyncTool */ = {
+			isa = PBXGroup;
+			children = (
+				843DD293217B3DA200863AEE /* main.swift */,
+				843DD298217B3F9E00863AEE /* EvernoteSyncTool-Bridging-Header.h */,
+			);
+			path = EvernoteSyncTool;
+			sourceTree = "<group>";
+		};
+		84C837FA217DF7EB00541D4D /* TrelloSyncTool */ = {
+			isa = PBXGroup;
+			children = (
+				84C837FB217DF7EB00541D4D /* main.swift */,
+			);
+			path = TrelloSyncTool;
+			sourceTree = "<group>";
+		};
+		84F3D4DC215E52A600D28733 = {
+			isa = PBXGroup;
+			children = (
+				84F3D4E7215E52A600D28733 /* SourceEditorPlugs */,
+				84F3D506215E532600D28733 /* XTComment */,
+				84F3D51E215E556500D28733 /* CleanClosureSyntax */,
+				843DD292217B3DA200863AEE /* EvernoteSyncTool */,
+				84C837FA217DF7EB00541D4D /* TrelloSyncTool */,
+				84F3D503215E532600D28733 /* Frameworks */,
+				84F3D4E6215E52A600D28733 /* Products */,
+				6C520DA7B0AF3033AB8C4E2A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		84F3D4E6215E52A600D28733 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F3D4E5215E52A600D28733 /* SourceEditorPlugs.app */,
+				84F3D502215E532500D28733 /* XTComment.appex */,
+				84F3D51C215E556400D28733 /* CleanClosureSyntax.appex */,
+				843DD291217B3DA200863AEE /* EvernoteSyncTool */,
+				84C837F9217DF7EB00541D4D /* TrelloSyncTool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F3D4E7215E52A600D28733 /* SourceEditorPlugs */ = {
+			isa = PBXGroup;
+			children = (
+				84F3D4E8215E52A600D28733 /* AppDelegate.swift */,
+				84F3D4EA215E52A700D28733 /* Assets.xcassets */,
+				84F3D4EC215E52A700D28733 /* MainMenu.xib */,
+				84F3D4EF215E52A700D28733 /* Info.plist */,
+				84F3D4F0215E52A700D28733 /* SourceEditorPlugs.entitlements */,
+			);
+			path = SourceEditorPlugs;
+			sourceTree = "<group>";
+		};
+		84F3D503215E532600D28733 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F3D504215E532600D28733 /* Cocoa.framework */,
+				CBBFD7BBFAEF59A15C0C7E45 /* Pods_EvernoteSyncTool.framework */,
+				7C803FBA4FE269EA54B99C4B /* Pods_TrelloSyncTool.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84F3D506215E532600D28733 /* XTComment */ = {
+			isa = PBXGroup;
+			children = (
+				84F3D507215E532600D28733 /* SourceEditorExtension.swift */,
+				84F3D509215E532600D28733 /* SourceEditorCommand.swift */,
+				84F3D514215E53E600D28733 /* SecondEditorCommand.swift */,
+				84F3D50B215E532600D28733 /* Info.plist */,
+				84F3D50C215E532600D28733 /* XTComment.entitlements */,
+			);
+			path = XTComment;
+			sourceTree = "<group>";
+		};
+		84F3D51E215E556500D28733 /* CleanClosureSyntax */ = {
+			isa = PBXGroup;
+			children = (
+				84F3D51F215E556500D28733 /* SourceEditorExtension.swift */,
+				84F3D521215E556500D28733 /* SourceEditorCommand.swift */,
+				84F3D523215E556500D28733 /* Info.plist */,
+				84F3D524215E556500D28733 /* CleanClosureSyntax.entitlements */,
+			);
+			path = CleanClosureSyntax;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		843DD290217B3DA200863AEE /* EvernoteSyncTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 843DD297217B3DA200863AEE /* Build configuration list for PBXNativeTarget "EvernoteSyncTool" */;
+			buildPhases = (
+				022DF5AEC398352D6CD5469F /* [CP] Check Pods Manifest.lock */,
+				843DD28D217B3DA200863AEE /* Sources */,
+				843DD28E217B3DA200863AEE /* Frameworks */,
+				843DD28F217B3DA200863AEE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EvernoteSyncTool;
+			productName = EvernoteSyncTool;
+			productReference = 843DD291217B3DA200863AEE /* EvernoteSyncTool */;
+			productType = "com.apple.product-type.tool";
+		};
+		84C837F8217DF7EB00541D4D /* TrelloSyncTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C837FF217DF7EB00541D4D /* Build configuration list for PBXNativeTarget "TrelloSyncTool" */;
+			buildPhases = (
+				83564EE717AEA20376A53B59 /* [CP] Check Pods Manifest.lock */,
+				84C837F5217DF7EB00541D4D /* Sources */,
+				84C837F6217DF7EB00541D4D /* Frameworks */,
+				84C837F7217DF7EB00541D4D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrelloSyncTool;
+			productName = TrelloSyncTool;
+			productReference = 84C837F9217DF7EB00541D4D /* TrelloSyncTool */;
+			productType = "com.apple.product-type.tool";
+		};
+		84F3D4E4215E52A600D28733 /* SourceEditorPlugs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F3D4F3215E52A700D28733 /* Build configuration list for PBXNativeTarget "SourceEditorPlugs" */;
+			buildPhases = (
+				84F3D4E1215E52A600D28733 /* Sources */,
+				84F3D4E2215E52A600D28733 /* Frameworks */,
+				84F3D4E3215E52A600D28733 /* Resources */,
+				84F3D513215E532600D28733 /* Embed App Extensions */,
+				84EA91E72179CAAE000DD6C9 /* swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F3D50E215E532600D28733 /* PBXTargetDependency */,
+				84F3D526215E556500D28733 /* PBXTargetDependency */,
+			);
+			name = SourceEditorPlugs;
+			productName = SourceEditorPlugs;
+			productReference = 84F3D4E5215E52A600D28733 /* SourceEditorPlugs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84F3D501215E532500D28733 /* XTComment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F3D510215E532600D28733 /* Build configuration list for PBXNativeTarget "XTComment" */;
+			buildPhases = (
+				84F3D4FE215E532500D28733 /* Sources */,
+				84F3D4FF215E532500D28733 /* Frameworks */,
+				84F3D500215E532500D28733 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XTComment;
+			productName = XTComment;
+			productReference = 84F3D502215E532500D28733 /* XTComment.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+		84F3D51B215E556400D28733 /* CleanClosureSyntax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F3D52A215E556500D28733 /* Build configuration list for PBXNativeTarget "CleanClosureSyntax" */;
+			buildPhases = (
+				84F3D518215E556400D28733 /* Sources */,
+				84F3D519215E556400D28733 /* Frameworks */,
+				84F3D51A215E556400D28733 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CleanClosureSyntax;
+			productName = CleanClosureSyntax;
+			productReference = 84F3D51C215E556400D28733 /* CleanClosureSyntax.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F3D4DD215E52A600D28733 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = clcw;
+				TargetAttributes = {
+					843DD290217B3DA200863AEE = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					84C837F8217DF7EB00541D4D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					84F3D4E4215E52A600D28733 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					84F3D501215E532500D28733 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					84F3D51B215E556400D28733 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 84F3D4E0215E52A600D28733 /* Build configuration list for PBXProject "SourceEditorPlugs" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84F3D4DC215E52A600D28733;
+			productRefGroup = 84F3D4E6215E52A600D28733 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F3D4E4215E52A600D28733 /* SourceEditorPlugs */,
+				84F3D501215E532500D28733 /* XTComment */,
+				84F3D51B215E556400D28733 /* CleanClosureSyntax */,
+				843DD290217B3DA200863AEE /* EvernoteSyncTool */,
+				84C837F8217DF7EB00541D4D /* TrelloSyncTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F3D4E3215E52A600D28733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F3D4EB215E52A700D28733 /* Assets.xcassets in Resources */,
+				84F3D4EE215E52A700D28733 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F3D500215E532500D28733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F3D51A215E556400D28733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		022DF5AEC398352D6CD5469F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EvernoteSyncTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83564EE717AEA20376A53B59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrelloSyncTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84EA91E72179CAAE000DD6C9 /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		843DD28D217B3DA200863AEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				843DD294217B3DA200863AEE /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C837F5217DF7EB00541D4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C837FC217DF7EB00541D4D /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F3D4E1215E52A600D28733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F3D4E9215E52A600D28733 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F3D4FE215E532500D28733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F3D508215E532600D28733 /* SourceEditorExtension.swift in Sources */,
+				84F3D50A215E532600D28733 /* SourceEditorCommand.swift in Sources */,
+				84F3D515215E53E600D28733 /* SecondEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F3D518215E556400D28733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F3D520215E556500D28733 /* SourceEditorExtension.swift in Sources */,
+				84F3D522215E556500D28733 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84F3D50E215E532600D28733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F3D501215E532500D28733 /* XTComment */;
+			targetProxy = 84F3D50D215E532600D28733 /* PBXContainerItemProxy */;
+		};
+		84F3D526215E556500D28733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F3D51B215E556400D28733 /* CleanClosureSyntax */;
+			targetProxy = 84F3D525215E556500D28733 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84F3D4EC215E52A700D28733 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F3D4ED215E52A700D28733 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		843DD295217B3DA200863AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7F74690828570A85E16D733 /* Pods-EvernoteSyncTool.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C4H9T5RF5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EvernoteSyncTool/EvernoteSyncTool-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		843DD296217B3DA200863AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3BFDA6FBCCCB8A075A21D96 /* Pods-EvernoteSyncTool.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C4H9T5RF5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EvernoteSyncTool/EvernoteSyncTool-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		84C837FD217DF7EB00541D4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F20D964E67D18F312C17000 /* Pods-TrelloSyncTool.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9CA5KUE8T7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		84C837FE217DF7EB00541D4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1066F47F323AE93E58DAE37B /* Pods-TrelloSyncTool.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9CA5KUE8T7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		84F3D4F1215E52A700D28733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84F3D4F2215E52A700D28733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		84F3D4F4215E52A700D28733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SourceEditorPlugs/SourceEditorPlugs.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9CA5KUE8T7;
+				INFOPLIST_FILE = SourceEditorPlugs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clcw.SourceEditorPlugs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		84F3D4F5215E52A700D28733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SourceEditorPlugs/SourceEditorPlugs.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9CA5KUE8T7;
+				INFOPLIST_FILE = SourceEditorPlugs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clcw.SourceEditorPlugs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		84F3D511215E532600D28733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XTComment/XTComment.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9CA5KUE8T7;
+				INFOPLIST_FILE = XTComment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clcw.SourceEditorPlugs.XTComment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		84F3D512215E532600D28733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XTComment/XTComment.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9CA5KUE8T7;
+				INFOPLIST_FILE = XTComment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clcw.SourceEditorPlugs.XTComment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		84F3D528215E556500D28733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CleanClosureSyntax/CleanClosureSyntax.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9CA5KUE8T7;
+				INFOPLIST_FILE = CleanClosureSyntax/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clcw.SourceEditorPlugs.CleanClosureSyntax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		84F3D529215E556500D28733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CleanClosureSyntax/CleanClosureSyntax.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9CA5KUE8T7;
+				INFOPLIST_FILE = CleanClosureSyntax/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.clcw.SourceEditorPlugs.CleanClosureSyntax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		843DD297217B3DA200863AEE /* Build configuration list for PBXNativeTarget "EvernoteSyncTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				843DD295217B3DA200863AEE /* Debug */,
+				843DD296217B3DA200863AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C837FF217DF7EB00541D4D /* Build configuration list for PBXNativeTarget "TrelloSyncTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C837FD217DF7EB00541D4D /* Debug */,
+				84C837FE217DF7EB00541D4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F3D4E0215E52A600D28733 /* Build configuration list for PBXProject "SourceEditorPlugs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F3D4F1215E52A700D28733 /* Debug */,
+				84F3D4F2215E52A700D28733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F3D4F3215E52A700D28733 /* Build configuration list for PBXNativeTarget "SourceEditorPlugs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F3D4F4215E52A700D28733 /* Debug */,
+				84F3D4F5215E52A700D28733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F3D510215E532600D28733 /* Build configuration list for PBXNativeTarget "XTComment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F3D511215E532600D28733 /* Debug */,
+				84F3D512215E532600D28733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F3D52A215E556500D28733 /* Build configuration list for PBXNativeTarget "CleanClosureSyntax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F3D528215E556500D28733 /* Debug */,
+				84F3D529215E556500D28733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F3D4DD215E52A600D28733 /* Project object */;
+}
